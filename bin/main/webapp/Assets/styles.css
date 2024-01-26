@@ -1,0 +1,15 @@
+.container-fluid-xl{
+    background:url('https://www.fecomercio.com.br/upload/img/2021/08/27/6128e8fd8868c-portal_parceria_com_gerando_falcoes.jpg');
+
+}
+.container-fluid-img1{
+    background:url('https://linktoleaders.com/wp-content/uploads/2023/01/Linkedin.jpg');
+}
+.texto-sombra {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-contorno {
+    -webkit-text-stroke: 1px black;
+    color: white;
+}

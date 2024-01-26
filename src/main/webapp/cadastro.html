@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Empregabilidade</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/LOGO.png" style="width:100px; padding:5px" class="images-responsive"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="BuscaEmprego.html">Buscar emprego</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CursoCapacitacao.html">Cursos de Capacitação</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Entrar
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="testepitch.html">Sign up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-4">
+      <h2>Cadastro</h2>
+      <p>Selecione o tipo de cadastro abaixo para começar.</p>
+
+      <!-- Opção para selecionar cadastro de Empresa ou Cadastro de Usuario -->
+      <div class="btn-group mb-5" role="group" aria-label="Tipo de Cadastro">
+          <button type="button" class="btn btn-primary" onclick="mostrarFormulario('usuario')">Cadastro de Usuário</button>
+          <button type="button" class="btn btn-primary" onclick="mostrarFormulario('empresa')">Cadastro de Empresa</button>
+      </div>
+
+      <!-- Formulário de Cadastro de Usuário -->
+      
+      <form id="cadastroUsuarioForm" class="cadastro-form mt-4 " style="display: none;" >
+          <div class="mb-3">
+              <label for="nomeUsuario" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nomeUsuario" required>
+          </div>
+          <h2>Escolaridade</h2>
+          <div class="mb-3">
+              <label for="escolaridadeNivel" class="form-label"> Nível:</label>
+              <input type="text" class="form-control" id="escolaridadeNivel" required>
+          </div>
+          <div class="mb-3">
+              <label for="escolaridadeNome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="escolaridadeNome" required>
+          </div>
+          <div class="mb-3">
+              <label for="endereco" class="form-label">Endereço:</label>
+              <input type="text" class="form-control" id="endereco" required>
+          </div>
+          <div class="mb-3">
+              <label for="telefoneUsuario" class="form-label">Telefone:</label>
+              <input type="text" class="form-control" id="telefoneUsuario" required>
+          </div>
+          <h2>Dados Pessoais</h2>
+          <div class="mb-3">
+              <label for="cpf" class="form-label">CPF:</label>
+              <input type="text" class="form-control" id="cpf" required>
+          </div>
+          <div class="mb-3">
+              <label for="emailUsuario" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="emailUsuario" required>
+          </div>
+          <div class="mb-3">
+              <label for="dataNascimento" class="form-label">Data de Nascimento:</label>
+              <input type="date" class="form-control" id="dataNascimento" required>
+          </div>
+          <div class="mb-3">
+              <label for="sexo" class="form-label">Sexo:</label>
+              <select class="form-select" id="sexo" required>
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="outro">Outro</option>
+              </select>
+          </div>
+          <div class="mb-3">
+              <label for="telefoneUsuario" class="form-label">Telefone:</label>
+              <input type="text" class="form-control" id="telefoneUsuario" required>
+          </div>
+          <div class="mb-3">
+              <label for="cep" class="form-label">CEP:</label>
+              <input type="text" class="form-control" id="cep" required>
+          </div>
+          <div class="mb-3">
+              <label for="rua" class="form-label">Rua:</label>
+              <input type="text" class="form-control" id="rua" required>
+          </div>
+          <div class="mb-3">
+              <label for="estado" class="form-label">Estado:</label>
+              <input type="text" class="form-control" id="estado" required>
+          </div>
+          <div class="mb-3">
+              <label for="numero" class="form-label">Número:</label>
+              <input type="text" class="form-control" id="numero" required>
+          </div>
+          <div class="mb-3">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <input type="text" class="form-control" id="cidade" required>
+          </div>
+          <div class="mb-3">
+              <label for="rg" class="form-label">RG:</label>
+              <input type="text" class="form-control" id="rg" required>
+          </div>
+          <div class="mb-3">
+              <label for="experienciaAnterior" class="form-label">Experiência Anterior:</label>
+              <input type="text" class="form-control" id="experienciaAnterior" required>
+          </div>
+          <!-- Adicione mais campos conforme necessário para cadastro de usuário -->
+          <button type="submit" class="btn btn-success">Cadastrar Usuário</button>
+      </form>
+
+      <!-- Formulário de Cadastro de Empresa -->
+      <form id="cadastroEmpresaForm" class="cadastro-form mt-4" style="display: none;">
+          <div class="mb-3">
+              <label for="cnpj" class="form-label">CNPJ:</label>
+              <input type="text" class="form-control" id="cnpj" required>
+          </div>
+          <div class="mb-3">
+              <label for="nomeEmpresa" class="form-label">Nome da Empresa:</label>
+              <input type="text" class="form-control" id="nomeEmpresa" required>
+          </div>
+          <div class="mb-3">
+              <label for="cargoEmpresa" class="form-label">Cargo na Empresa:</label>
+              <input type="text" class="form-control" id="cargoEmpresa" required>
+          </div>
+          <div class="mb-3">
+              <label for="ramoEmpresa" class="form-label">Ramo da Empresa:</label>
+              <input type="text" class="form-control" id="ramoEmpresa" required>
+          </div>
+          <!-- Adicione mais campos conforme necessário para cadastro de empresa -->
+          <button type="submit" class="btn btn-success">Cadastrar Empresa</button>
+      </form>
+  </div>
+
+    <!-- Seção de Fotos Ilustrativas -->
+    <section class="container mb-5">
+        <h2>Fotos Ilustrativas</h2>
+        <div class="row">
+            
+            <div class="col-md-3">
+                <img src="https://tecyoucursos.com.br/wp-content/uploads/2022/12/empregabilidade-bases.jpg" class="img-fluid" alt="Imagem Ilustrativa 1">
+            </div>
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgxKHwWTtrp0nHbpXW_tPqBHk0GobynSm4fA&usqp=CAU.jpg" class="img-fluid" alt="Imagem Ilustrativa 2">
+            </div>
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacePfAYp2D1IR8zQIbL_ddWB57OHjKeKANA&usqp=CAU.jpg" class="img-fluid" alt="Imagem Ilustrativa 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-white bg-dark">
+			<div class="row pt-5 pb-5">
+			  <section class="col-md-5">
+				<h5>Perifa+</h5>
+				<ul class="nav flex-column">
+				  <li class="nav-item">
+					<a href="#" class="nav-link text-white">Busca de Emprego</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="#" class="nav-link text-white">Curso de Capacitação</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="#" class="nav-link text-white">Feira de empregabilidade</a>
+				  </li>
+				</ul>
+			  </section>
+		
+			  <section id="contato" class="col-md-5">
+				<h5>Contato</h5>
+				<ul class="nav flex-column">
+				  <li class="nav-item">
+					<a href="tel:+552127713557" class="nav-link text-white">Tel: (21)9 9999-9999</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="https://api.whatsapp.com/send?phone=5513999999999&text=Quero%20saber%20mais%20sobre%20o%20Curso!"
+					  target="_blank" class="nav-link text-white">WhatsApp:
+					  (21) 9 9999-9999
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="https://www.faceboo.com" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="facebook"/></a>
+					<a href="https://www.instagra.com" target="_blank"><img src="https://img.icons8.com/fluency/50/000000/instagram-new.png"/></a>
+				  </li>
+				</ul>
+			  </section>
+		
+			  <section>
+				<a href="#" class="row text-white px-3">Voltar ao Topo!</a>
+			  </section>
+			  <section>
+				<a class="row text-white px-3 pt-4">Desenvolvido para o projeto final Recode Pro 2023 por: Richard Gomes, Risonaldo Dos Santos, Sávio e Gabi</a>
+			  </section>
+			</div>
+		  </footer>  
+
+    <!-- Link para o JS do Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function mostrarFormulario(tipo) {
+          if (tipo === 'usuario') {
+              document.getElementById('cadastroUsuarioForm').style.display = 'block';
+              document.getElementById('cadastroEmpresaForm').style.display = 'none';
+          } else if (tipo === 'empresa') {
+              document.getElementById('cadastroEmpresaForm').style.display = 'block';
+              document.getElementById('cadastroUsuarioForm').style.display = 'none';
+          }
+      }
+  </script>
+</body>
+</html>

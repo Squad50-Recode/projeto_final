@@ -1,0 +1,49 @@
+Modelo Conceitual:
+
+https://app.brmodeloweb.com/#!/conceptual/64de4691ffee37092004197c
+
+Modelo Lógico:
+
+
+https://app.brmodeloweb.com/#!/logic/%7B%22modelid%22:%2264de56b6823f85bdb65834f6%22,%22conversionId%22:%22%22%7D
+
+CREATE TABLE `perifa`.`empresa` (
+  `cnpj` FLOAT(80) NOT NULL,
+  `Nome` VARCHAR(45) NULL,
+  `Telefone` FLOAT(45) NULL,
+  `area` VARCHAR(45) NULL,
+  `cargo` VARCHAR(45) NULL,
+  PRIMARY KEY (`cnpj`));
+
+CREATE TABLE `perifa`.`educacao` (
+  `cnpj` int(11) NOT NULL,
+  `nivel de ensino` VARCHAR(45) NULL,
+  `nome` FLOAT(45) NULL,
+  `curso` VARCHAR(45) NULL,
+  `endereco` VARCHAR(45) NULL,
+`telefone` FLOAT(45) NULL,
+  PRIMARY KEY (`cnpj`));
+`endereco` VARCHAR(45) NULL,
+
+CREATE TABLE `perifa`.`empregador` (
+  `cnpj` int(11) NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `cargo` VARCHAR(45) NULL,
+  `ramo` VARCHAR(45) NULL,
+  PRIMARY KEY (`cnpj`));
+
+
+CREATE TABLE `perifa`.`trabalhador` (
+  `CPF` FLOAT(80) NOT NULL,
+  `Nome` VARCHAR(80) NULL,
+  `Email` VARCHAR(45) NULL,
+  `Data Nascimento` FLOAT(45) NULL,
+  `Sexo` VARCHAR(45) NULL,
+  `Telefone` FLOAT(45) NULL,
+`CEP` FLOAT(45) NULL,
+`Rua` VARCHAR(45) NULL,
+`Estado` VARCHAR(45) NULL,
+`Numero` VARCHAR(45) NULL,
+`Cidade` VARCHAR(45) NULL,
+`RG` FLOAT(45) NULL,
+  PRIMARY KEY (`cnpj`)); 

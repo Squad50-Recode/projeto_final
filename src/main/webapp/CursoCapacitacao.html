@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Externo CSS -->
+  <link rel="stylesheet" type="text/css" href="Assets/styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <title>Cursos</title>
+  <style>
+    .curso-img {
+      width: 100%;
+      height: 350px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/LOGO.png" style="width:100px; padding:5px"
+          class="images-responsive"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BuscaEmprego.html">Buscar emprego</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CursoCapacitacao.html">Cursos de Capacitação</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Entrar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.html">Sign up</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Corpo do site -->
+  <div class="container mt-4">
+    <h1 class="mb-4">Cursos de Capacitação</h1>
+
+    <!-- Exemplo de Cursos -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/images/curso1.jpg" class="card-img-top img-fluid curso-img" alt="Curso 1">
+          <div class="card-body">
+            <h5 class="card-title">Curso 1</h5>
+            <p class="card-text">Descrição do Curso 1. Oferece certificado gratuito.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/images/curso2.jpg" class="card-img-top img-fluid curso-img" alt="Curso 2">
+          <div class="card-body">
+            <h5 class="card-title">Curso 2</h5>
+            <p class="card-text">Descrição do Curso 2. Oferece certificado gratuito.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/images/curso3.jpeg" class="card-img-top img-fluid curso-img" alt="Curso 3">
+          <div class="card-body">
+            <h5 class="card-title">Curso 3</h5>
+            <p class="card-text">Descrição do Curso 3. Oferece certificado gratuito.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Fim dos Exemplos de Cursos -->
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid text-white bg-dark">
+    <div class="row pt-5 pb-5">
+      <section class="col-md-5">
+        <h5>Perifa+</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Busca de Emprego</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Curso de Capacitação</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Feira de empregabilidade</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contato" class="col-md-5">
+        <h5>Contato</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="tel:+552127713557" class="nav-link text-white">Tel: (21)9 9999-9999</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://api.whatsapp.com/send?phone=5513999999999&text=Quero%20saber%20mais%20sobre%20o%20Curso!"
+              target="_blank" class="nav-link text-white">WhatsApp:
+              (21) 9 9999-9999
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.faceboo.com" target="_blank"><img
+                src="https://img.icons8.com/color/48/000000/facebook.png" alt="facebook" /></a>
+            <a href="https://www.instagra.com" target="_blank"><img
+                src="https://img.icons8.com/fluency/50/000000/instagram-new.png" /></a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <a href="#" class="row text-white px-3">Voltar ao Topo!</a>
+      </section>
+      <section>
+        <a class="row text-white px-3 pt-4">Desenvolvido para o projeto final Recode Pro 2023 por: Richard Gomes,
+          Risonaldo Dos Santos, Sávio e Gabi</a>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

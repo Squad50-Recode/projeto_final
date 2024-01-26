@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Externo CSS -->
+     <link rel="stylesheet" type="text/css" href="Assets/styles.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+     <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+     <title>Contato</title>
+     <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .contact-details {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-details li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!-- MENU -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/LOGO.png" style="width:100px; padding:5px" class="images-responsive"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="BuscaEmprego.html">Buscar emprego</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CursoCapacitacao.html">Cursos de Capacitação</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Entrar
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="cadastro.html">Sign up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="contact-container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+
+            <!-- Informações de Contato -->
+            <div class="contact-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/400x200" alt="Escritório" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="contact-details">
+                            <li><strong>Endereço:</strong> Rua Fictícia, 123 - Cidade Fictícia</li>
+                            <li><strong>Telefone:</strong> (21) 9 9999-9999</li>
+                            <li><strong>Email:</strong> contato@empresa.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid text-white bg-dark">
+        <div class="row pt-5 pb-5">
+          <section class="col-md-5">
+            <h5>Perifa+</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">Busca de Emprego</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">Curso de Capacitação</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">Feira de empregabilidade</a>
+              </li>
+            </ul>
+          </section>
+    
+          <section id="contato" class="col-md-5">
+            <h5>Contato</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="tel:+552127713557" class="nav-link text-white">Tel: (21)9 9999-9999</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://api.whatsapp.com/send?phone=5513999999999&text=Quero%20saber%20mais%20sobre%20o%20Curso!"
+                  target="_blank" class="nav-link text-white">WhatsApp:
+                  (21) 9 9999-9999
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.faceboo.com" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="facebook"/></a>
+                <a href="https://www.instagra.com" target="_blank"><img src="https://img.icons8.com/fluency/50/000000/instagram-new.png"/></a>
+              </li>
+            </ul>
+          </section>
+    
+          <section>
+            <a href="#" class="row text-white px-3">Voltar ao Topo!</a>
+          </section>
+          <section>
+            <a class="row text-white px-3 pt-4">Desenvolvido para o projeto final Recode Pro 2023 por: Richard Gomes, Risonaldo Dos Santos, Sávio e Gabi</a>
+          </section>
+        </div>
+      </footer>  
+</body>
+</html>
